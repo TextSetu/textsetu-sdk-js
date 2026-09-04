@@ -1,0 +1,55 @@
+{
+  "name": "@textsetu/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for the TextSetu translation management API.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TextSetu/textsetu-sdk-js.git"
+  },
+  "homepage": "https://docs.textsetu.com/api",
+  "bugs": {
+    "url": "https://github.com/TextSetu/textsetu-sdk-js/issues"
+  },
+  "keywords": [
+    "textsetu",
+    "translation",
+    "localization",
+    "i18n",
+    "translation-memory",
+    "glossary",
+    "sdk"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
